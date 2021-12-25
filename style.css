@@ -1,0 +1,109 @@
+@font-face {
+    
+    font-family: 'abel-regular';
+    src: url('font/abel-regular-webfont.eot');
+    src: url('font/abel-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/abel-regular-webfont.woff') format('woff'),
+         url('font/abel-regular-webfont.ttf') format('truetype'),
+         url('font/abel-regular-webfont.svg#abel-regular') format('svg');
+   
+
+}
+
+body {
+    background: url('images/background.jpg');
+    background-size: cover;
+    font-family: 'abel-regular', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1,  p {
+    text-align: center;
+}
+h1 {
+    font-size: 50px;
+}
+p {
+    font-size: 30px;
+}
+li {
+    list-style-type: square;
+    font-size: 24px;
+}
+
+img {
+    float: right;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px #323ca5;
+    height: 150px;
+    width: auto;
+}
+
+h2 {
+    font-size: 35px;
+    text-decoration: underline #323ca5;
+    text-align: center;
+    color: black;
+}
+
+strong {
+    color: #fa5656;
+}
+
+a {
+    color: #323ca5;
+    text-decoration: none;
+}
+
+section {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 2%;
+    width: 30%;
+}
+
+#liseret, .container {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#liseret {   
+    width: 2%;
+    margin-right: 2%;
+    height: 85vh;
+    background-image: linear-gradient(#9e9e9e, #323ca5);
+    border-radius: 5px;
+}
+
+.container {
+    width: 90%;
+}
+
+@media all and (max-width: 1024px) {
+    section {
+        display: block;
+        width: auto;
+    }
+    img {
+        height: 110px;
+    }
+    #liseret {
+        width: 100%;
+        height: 2px;
+    }
+    .container {
+        width: auto;
+    }
+}
+@media screen and (max-width: 360px) {
+    img {
+        display: none;
+    }
+} 
+@media all and (max-width: 700px) {
+    #liseret {
+        display: none;
+    }
+}
